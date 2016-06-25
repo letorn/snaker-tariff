@@ -33,7 +33,6 @@ public class TariffPipeline implements Pipeline, Closeable
     @Override
     public void close() throws IOException
     {
-
         List<String> headers = new ArrayList<>();
         List<Map<String, String>> datas = new ArrayList<>();
 
@@ -71,7 +70,7 @@ public class TariffPipeline implements Pipeline, Closeable
             System.out.println(tariff.toString());
         }
 
-        ExcelKit.write("d:/china.xls", headers, datas);
+        ExcelKit.write("d:/canada.xls", headers, datas);
 
         tariffs.clear();
     }

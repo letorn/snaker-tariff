@@ -65,7 +65,7 @@ public class TariffProcessor implements PageProcessor
         Integer curr = Integer.valueOf(xcurr.trim());
         Integer total = Integer.valueOf(xtotal.trim());
 
-        if (curr < 30)
+        if (curr < total)
         {
             page.addTargetRequest(createRequestUrl(curr + 1));
         }
